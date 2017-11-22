@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!--A més...fes una nova pàgina en html strict que tingui el següent contingut:
+Què té validesa XHTML?
+Què és strict?
+Què és transitional?
+Què fer servir strict o transitional?
+La pàgina ha de contenir: títol, descripció, encapçalats, taules, enllaços externs i interns, imatges ...
+
+Puja el document .html vàlid de les dos pàgines.
+-->
+<head>
+    <title>XHTML cabeceras y estilo ¿porque es importante usar strict?</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+    <meta name="description" content="Esto es un ejercicio de clase que jamás verá la luz" />
+    <meta name="keywords" content="HTML, XHTML, lenguaje de marcas, strict,transitional"/>
+    <link rel="stylesheet" type="text/css" href="theme2.css"/>
+</head>
+
+<body>
+    
+    <div class="superior">
+        <h1>Strict VS Transitional  </h1>
+    </div>
+    
+    <div class="lateral">
+        <ul class="menu">
+            
+            <li><a href="practica2.html">XHTML</a></li>
+            <li> </li>
+            <li><a href="pr2StrictTransitional.html">Strict VS Transitional</a></li>
+
+      </ul>
+    </div>
+    <div class="Texto">
+        <p>Existen dos variantes de XHTML 1.0 que vienen definidos por los <strong>DOCTYPE TRANSITIONAL</strong> y <strong>STRICT</strong>.</p><p>Los nombres ya nos dan una idea de que tratan cada uno de ellos: Los <strong>DOCTYPE TRANSITIONAL</strong> están pensados para aquellos que hacen una transición de páginas en lenguaje de marcas más antiguos a formas modernas. Mientras que los <strong>DOCTYPE STRICT</strong> suponen más restricciones en el formato de marcas. <strong>STRICT</strong> es considerado el estándar actual.</p><p>Así se puede usar un <strong>DOCTYPE TRANSITIONAL</strong> cuando el documento tiene muchas marcas antiguas que no se pueden convertir fácilmente para cumplir con un <strong>DOCTYPE STRICT</strong>. Pero <strong>STRICT</strong> es a lo que deberíamos aspirar como desarrolladores ya que fomenta, y en algunos casos impone, la separación de estructura y presentación, trasladando los aspectos de presentación del marcado a un documento <strong>CSS</strong> a parte.</p><p><strong>STRICT</strong> excluye muchos atributos y elementos de presentación. Esto puede ser visto como un impedimento para algunos desarrolladores pero es más un cambio de hábitos que además presenta ventajas como una presentación de los sitios web más estandarizada entre los distintos navegadores.</p><p>Cito a continuación algunas de las diferencias más notables:</p><ul>
+            <li><p>Diferencias de modelo de contenido:</p>
+            <p>  El modelo de contenido de un tipo de elemento describe lo que puede contener una         instancia del tipo de elemento. La diferencia más importante en los modelos de         contenido entre Transitional y Strict es que los elementos <em>blockquote</em>, <em>body</em> y         <em>form</em> solo pueden contener elementos de nivel de bloque. Algunos ejemplos:</p>
+            <p>  -El texto y las imágenes no están permitidos inmediatamente dentro del elemento del cuerpo, y deben estar contenidos en un elemento de nivel de bloque como p o div</p>
+            <p>  -Los elementos contenidos en una cita en bloque ( <em>blockquote</em>) deben estar anidados en elementos a nivel de bloque como p o div</p>
+            <p>  -Los elementos Input no deben ser descendientes directos de un elemento de formulario (<em>form</em>).</p>
+            </li><li><p>Elementos que no están permitidos en DOCTYPEs estrictos</p>
+            </li></ul><blockquote>
+                                 <p>center</p>
+                                 <p>font</p> 
+                                  <p>iframe</p>
+                                  <p>strike</p>
+                                  <p>u</p>
+                                </blockquote><ul>
+            <li>Atributos no permitidos en DOCTYPEs estrictos:</li></ul><blockquote>
+                                  <p>align (permitido en elementos de tablas)</p>
+                                  <p>language</p>
+                                  <p>background</p>
+                                  <p>bgcolor</p>
+                                  <p>border (permitido en tablas)</p>
+                                  <p>height (permitido en img y objetcs)</p>
+                                  <p>hspace</p>
+                                  <p>noshade</p>
+                                  <p>nowrap</p>
+                                  <p>target</p>
+                                  <p>text, link, vlink, and alink</p>
+                                  <p>vspace</p>
+                                  <p>width (permitido en img, objects, tablas, col y colgroup)</p>
+            </blockquote>
+            
+            <p>Para obtener una lista completa de las diferencias entre <strong>TRANSITIONAL</strong> y <strong>STRICT</strong> podemos consultar <a href="http://www.zvon.org/xxl/xhtmlReference/Output/comparison.html">STRICT VS TRANSITIONAL</a></p>
+            
+            
+    </div>
+    
+
+</body>
+
+</html>

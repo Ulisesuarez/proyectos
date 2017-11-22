@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!--A més...fes una nova pàgina en html strict que tingui el següent contingut:
+Què té validesa XHTML?
+Què és strict?
+Què és transitional?
+Què fer servir strict o transitional?
+La pàgina ha de contenir: títol, descripció, encapçalats, taules, enllaços externs i interns, imatges ...
+
+Puja el document .html vàlid de les dos pàgines.
+-->
+<head>
+    <title>XHTML cabeceras y estilo ¿porque es importante usar strict?</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+    <meta name="description" content="Esto es un ejercicio de clase que jamás verá la luz" />
+    <meta name="keywords" content="HTML, XHTML, lenguaje de marcas, strict,transitional"/>
+    <link rel="stylesheet" type="text/css" href="theme2.css"/>
+</head>
+
+<body>
+    
+    <div class="superior">
+        <h1>XHTML  </h1>
+    </div>
+    
+    <div class="lateral">
+        <ul class="menu">
+            
+            <li><a href="practica2.html">XHTML</a></li>
+            <li> </li>
+            <li><a href="pr2StrictTransitional.html">Strict VS Transitional</a></li>
+
+      </ul>
+    </div>
+    <div class="Texto">
+        <p> XHTML (Lenguaje de Marcado de Hipertexto Extensible) es una versión más estricta y limpia de HTML , 
+            que nace precisamente con el objetivo de remplazar a HTML ante su limitación de uso con las cada vez
+            más abundantes herramientas basadas en XML. XHTML combina la sintaxis de HTML, diseñada para mostrar datos,
+            con la de XML, diseñado para describir los datos.</p>
+            
+        <p>XHTML, está orientado al uso de un etiquetado correcto y por tanto exige una serie de requisitos básicos a cumplir 
+            en lo que a código se refiere para que posea una estructuración coherente:</p>
+        </div>  
+            
+        
+            
+    <h3>¿Qué necesita mi documento para ser XHTML?</h3>
+    <div class="Tabla">
+        <table>
+            <tr>
+                <th>Requisito</th>
+                <th>Ejemplo mal uso</th>
+                <th>Corrección</th>
+            </tr>
+            <tr>
+                <td>Elementos correctamente anidados</td>
+                <td><img title="Mal anidado" src="https://i.imgur.com/2nlywfq.png" alt="Ejemplo mal anidado"/></td>
+                <td><img title="Bien anidado" src="https://i.imgur.com/CkZp1Et.png" alt="Ejemplo bien anidado"/>  </td>
+            </tr>
+            <tr>
+                <td>Etiquetas en minúsculas</td>
+                <td><img title="Mayúsculas" src="https://i.imgur.com/X9DtbhV.png" alt="Ejemplo error mayúsculas"/></td>
+                <td><img title="Minúsculas" src="https://i.imgur.com/fvhVr6k.png" alt="Ejemplo bien formado minúsuclas "/>  </td>
+            </tr>
+
+            <tr>
+                <td>Atributos de valores entrecomillados</td>
+                <td><img title="Sin comillas" src="https://i.imgur.com/p6CeHYN.png" alt="Ejemplo error comillas"/></td>
+                <td><img title="Con comillas" src="https://i.imgur.com/yvuf9qa.png" alt="Ejemplo atributo entrecomillado "/>  </td>
+            </tr>
+            <tr>
+                    <td> Declaración DOCTYPE</td>
+                    <td>&#60;!DOCTYPE html &#62;
+                            <br/>
+                                                 
+                            &#60;html&#62;</td>
+                    <td> &#60;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+                        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" &#62;
+                        <br/>
+                                             
+                        &#60;html xmlns="http://www.w3.org/1999/xhtml"&#62; </td>
+
+                    
+            </tr>
+            <tr>
+                    <td>Minimización de atributos prohibida</td>
+                    <td>&#60;frame noresize&#62;</td>
+                    <td>&#60;frame noresize:'noresize'&#62;</td>
+            </tr>
+            <tr>
+                    <td>El atributo name se cambia por id</td>
+                    <td>&#60;img src="picutre.gif name='picture1'&#47; &#62;</td>
+                    <td>&#60;img src="picutre.gif id='picture1'&#47; &#62;</td>
+            </tr>
+
+        </table>
+    </div>
+
+</body>
+
+</html>

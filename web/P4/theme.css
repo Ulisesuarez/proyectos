@@ -1,0 +1,50 @@
+
+#imagencab{
+    
+    margin-top:-1em;
+    position: absolute;
+    z-index: -1;
+    width:50em; 
+    height: auto;
+    left:18.5%;
+    right:18.5%;
+    
+    
+}
+
+
+
+#menuHome ul {
+    margin-top:0em;
+    list-style-type:none;    
+    width: 50em;
+    margin-left:auto;
+    margin-right:auto;
+    
+}
+
+
+#menuHome ul li {
+    padding:1em;
+    float:left;
+    background-image:"Empty-Blackboard.jpg";
+    background-color:rgb(0, 0, 0);
+    
+
+}
+
+#menuHome ul li a {
+    
+    color: rgb(255, 0, 0);
+    
+    padding: 1em 1em;
+    text-decoration-style: double;
+    font-style: bold;
+
+    
+}
+
+#menuHome ul li a:hover {
+    background-color: rgb(94, 93, 187);
+    opacity: 0.5;
+}

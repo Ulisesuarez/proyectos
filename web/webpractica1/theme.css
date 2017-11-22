@@ -1,0 +1,114 @@
+body {
+    font-size: 100%;
+   background-color: #F7D358;
+}
+
+.superior{
+    top:0px;
+    left:20px;
+    width: 1400px;
+    height: 250px;
+    position: fixed;
+    background-color:#F7D358;
+    z-index: 2;
+}
+.cabezera {
+    position: fixed;
+    top: 20px;
+    bottom: 0;
+    right: 200px;
+    left: 200px;
+}
+
+h1 {
+    position: fixed;
+    top: 150px;
+    left: 400px;
+    color: #2A1B0A;
+    font-size: 2.6em;
+    
+}
+
+ul{
+    list-style:none;
+}
+
+table {
+    
+    border-spacing: 20px;
+    border-collapse: separate;
+    
+    
+}
+.Tabla{
+    position: relative;
+    width: 600px;
+    height: 300px;
+    top: 400px;
+    left: 400px;
+    z-index:2 ;
+    
+}
+
+.lateral{
+    top:0px;
+    left:0px;
+    width: 230px;
+    height: 1400px;
+    position: fixed;
+    background-color:#F79F81;
+    z-index: 1;
+}
+
+.menu {
+    position: fixed;
+    top: 250px;
+    
+    font-size: 1.2em;
+}
+li {padding-bottom: 10px;}
+li > a{
+
+    font-family: "Gill Sans", Sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    color: #2A1B0A;
+    text-decoration:none;
+}
+
+p {
+    
+    font-size: 0.875em;
+        
+}
+
+.Texto{
+    width: 600px;
+    height: 50px;
+    position: relative;
+    top: 300px;
+    left: 400px;
+    z-index: -1;
+}
+
+th{
+    font-size: 1em;
+    font-weight: bold;
+}
+
+td{
+    font-size: 0.875em;
+
+}
+
+.About > p{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #FF4000;
+    width: 800px;
+    height: 50px;
+    position: relative;
+    top: 300px;
+    left: 400px;
+}
+
