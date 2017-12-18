@@ -1,25 +1,61 @@
+@font-face{
+    font-family: chawp;
+    src: url(/home/ulises/Micarpeta/proyectos/web/P4/chawp.regular.otf);
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 #imagencab{
     
     margin-top:-1em;
     position: absolute;
     z-index: -1;
-    width:50em; 
+    width: 60%;
+    -webkit-width:60%; 
+    -moz-width:60em; 
     height: auto;
-    left:18.5%;
-    right:18.5%;
+    left:18%;
+    right:18%;
     
     
 }
 
 
 
+
+#cuerpoHome{
+    display:inline-block;
+    margin-top: 5%;
+    
+}
+
+#bodyHome h1{
+    margin-left:35%;
+    margin-right: 20%;
+    width: 100%;
+    margin-top:8%;
+    -webkit-margin-left:35%;
+    -webkit-margin-right: 20%;
+    -webkit-width: 100%;
+    -moz-margin-left:41%;
+    -moz-margin-right: 35%;
+    -moz-width: 30%}
+
+#menuHome{
+    display:inline-block;
+}
 #menuHome ul {
+    
     margin-top:0em;
-    list-style-type:none;    
-    width: 50em;
-    margin-left:auto;
-    margin-right:auto;
+    list-style-type:none; 
+    width: 100%;
+    margin-left: 25%;
+    -webkit-width:100%;
+    -webkit-margin-left:25%  ; 
+    -moz-width: 50em;
+    -moz-margin-left:18%;
+    margin-right:18%;
     
 }
 
@@ -27,24 +63,432 @@
 #menuHome ul li {
     padding:1em;
     float:left;
-    background-image:"Empty-Blackboard.jpg";
-    background-color:rgb(0, 0, 0);
+   
     
+    font-family: chawp;
 
 }
 
+
 #menuHome ul li a {
     
-    color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
     
     padding: 1em 1em;
     text-decoration-style: double;
     font-style: bold;
-
+    font-size: 1em;
     
 }
 
 #menuHome ul li a:hover {
-    background-color: rgb(94, 93, 187);
+    background-color: rgb(31, 223, 13);
     opacity: 0.5;
 }
+
+body{
+
+    background-color: rgb(173, 255, 255);
+}
+
+#cuerpoAbout{
+    
+    float:left;
+    
+    margin-left: -30%;
+}
+#cuerpoAbout p{
+    
+    display:block;
+}
+
+#menuAbout ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 70%;
+    float:left;
+   
+
+}
+
+.aOtrosAbout {
+    display: block;
+    width: 10%;
+    padding: 2%;
+    background-color: #f72b2b;  
+    border: solid;
+    border-width: 1.5em;
+    border-color: rgb(0, 0, 0);
+    border-image:url(border-curve.png) 500 500 500 500 round ;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.5em;
+    font-weight:  bold;
+    color:black;
+    text-decoration:none;
+}
+
+#aUltimoAbout{
+    display: block;
+    width: 10%;
+    background-color: #f72b2b;
+    border: solid;
+    border-width: 1.5em;
+    border-color: rgb(0, 0, 0);
+    border-image:url(border-curve.png) 500 500 500 500 round ;
+    padding: 2%;
+    padding-block-end: 50%;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.5em;
+    font-weight:  bold;
+    color:black;
+    text-decoration:none;
+    
+}
+
+#menuAbout ul li a:hover {
+    background-color: rgb(247, 132, 132);
+    opacity: 1;
+}
+
+#cuerpoRandom{
+    float:left;
+}
+#cuerpoRandom h1{
+    text-align: center;
+}
+#cuerpoRandom h2{
+    text-align: center;
+}
+#cuerpoRandom h3{
+    text-align: center;
+}
+#menuRandom{
+    float:left;
+    width: 30%;
+}
+#menuRandom ul {
+    list-style-type: none;
+    
+    }
+
+#mainRandom {
+    float: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    color:green;
+    
+
+}
+
+
+
+#menuRandom li:hover .RandomDesplegable {
+    display: block;
+}
+#menuRandom li a {
+    
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+
+#menuRandom li:hover {
+    color:green;
+    background-color: violet;
+
+    display: block;
+
+}
+
+.RandomDesplegable {
+    display: none;
+    
+    background-color: rgb(173, 255, 255);;
+    
+    z-index: 1;
+}
+
+#menuimagen{
+    width: 50%;
+    height: auto;
+
+}
+
+#cuerpoFuturo{
+    float:left;
+    margin-left: 20%;
+
+}
+.Futuromain{
+    float: left;
+    
+
+}
+.Futuromain ul{
+    
+        list-style-type: none;
+        margin: auto;
+        padding: 0.5em;
+        width: 100%;
+        font-size: 2em;
+}
+
+
+
+.Futuromain ul li a{
+    display: inline-block;
+    padding: 0.7em 0.7em 0.7em 1.4em;
+    background: #333;
+    color: #eee;
+    border-bottom: 0.01em solid #000;
+    border-top: 0.01em solid #666;
+    text-decoration: none;
+    width: 15%;
+    height: auto;
+
+}
+
+.Futuromain ul li a:hover{
+    background-color: black;
+}
+
+
+
+.onclick-menu:focus .onclick-menu-content {
+    /* content is visible if menu is 'opened' */
+    visibility: visible;
+}
+.onclick-menu-content {
+    position: absolute;
+    z-index: 1;
+
+    /* disable visibility by default, delay to enable clicks */
+    visibility: hidden;
+    transition: visibility 0.5s;
+}
+
+
+#menuContact{
+    float:left;
+    width: 100%;
+}
+#menuContact ul{
+    list-style-type: none;
+    
+    
+}
+
+#ul1 li{
+    text-align: center;
+    padding: 0.5em;
+    background-color: rgb(0, 255, 85);
+    border:solid black 0.1em;
+    border-radius: 2em;
+    width: 15%;
+}
+#ul2 li{
+        display:none;
+        padding: 0.2em;
+        background-color: rgb(0, 255, 85);
+        border:solid black 0.1em;
+        width: 100%;
+    }
+
+.contactnoa{
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+    font-family: Courier New, Courier, monospace;
+    }
+    
+.contactnoa:hover #ul2 li{
+    margin-top: 10%;
+    display:block;
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+    font-family: Courier New, Courier, monospace;
+}
+#ul2{
+    
+    margin-right: 10%;
+    margin-left: -10%;
+}
+#ul1 li a{
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+    font-family: Courier New, Courier, monospace;
+    
+        
+}
+
+
+#social-media {
+    margin-top: 3%;
+    float:right;
+}
+#social-media a {
+    border-radius:2px; 
+    border:0px; 
+    display:inline-block;}
+ 
+a.facebook{
+    display:inline-block; 
+    background: url(social-icons.jpg) no-repeat 0 0; 
+    width:30px; 
+    height:30px;}
+a.facebook:hover{background-position: 0 -30px;}
+ 
+a.twitter{
+    display:inline-block; 
+    background: url(social-icons.jpg) no-repeat -30px 0px; 
+    width:30px; 
+    height:30px;}
+a.twitter:hover{background-position:-30px -30px;}
+ 
+ 
+a.instagram{
+    display:inline-block; 
+    background: url(social-icons.jpg) no-repeat -90px 0px;
+    width:30px; 
+    height:30px;}
+a.instagram:hover{background-position:-90px -30px;}
+ 
+
+a.googleplus{
+    display:inline-block; 
+    background: url(social-icons.jpg) no-repeat -180px 0px; 
+    width:30px; 
+    height:30px;}
+a.googleplus:hover{background-position: -180px -30px;}
+
+div.prueba{
+    display:inline-block; 
+    background: url(emojisprite_0.png) no-repeat 0px 0px; 
+    width:56px; 
+    height:56px;}
+span.alien{
+        display:inline-block; 
+        background: url(emojisprite_0.png) no-repeat -392px -168px ; 
+        width:56px; 
+        height:56px;}
+span.monomanos{
+            display:inline-block; 
+            background: url(emojisprite_0.png) no-repeat -168px -168px ; 
+            width:56px; 
+            height:56px;}
+span.exito{
+                display:inline-block; 
+                background: url(emojisprite_0.png) no-repeat -112px  -224px ; 
+                width:56px; 
+                height:56px;}
+span.enfermo{
+                    display:inline-block; 
+                    background: url(emojisprite_0.png) no-repeat   -672px -56px ; 
+                    width:56px; 
+                    height:56px;}
+span.idea{
+                display:inline-block; 
+                background: url(emojisprite_0.png) no-repeat   -560px -168px ; 
+                width:56px; 
+                height:56px;}
+span.ruego{
+    display:inline-block; 
+    background: url(emojisprite_0.png) no-repeat   -618px -224px ; 
+    width:56px; 
+    height:56px;}
+
+span.pensar{
+        display:inline-block; 
+        background: url(emojisprite_0.png) no-repeat   -1456px -336px ; 
+        width:56px; 
+        height:56px;}
+
+
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=enviar] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1.2em 0.5em;
+    border: none;
+    border-radius: 0.4em;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    float:left;
+    margin-top:-20%;
+    margin-left:30%;
+    border-radius: 5px;
+    
+    }
+.container h1{
+    margin-left: 50%
+}
+
+
+
+#social-media.abouts{
+    
+    margin-top:15%;
+}
+
+
+#homerelative{
+    float:left;
+}
+#bodyHome p{
+    position: absolute;
+    left: 2%; top: 10%;
+    margin-left:25%;
+    margin-top:10%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20em;
+}
+
+div.o{
+position:absolute;
+left:50%;
+top :60%;
+background: url(emojisprite_0.png) no-repeat -1120px -168px; 
+width:56px; 
+height:56px;}
+
+#social-media.homes{
+    margin-top: 30%;
+}
+
+div.ranran{
+    display:inline-block; 
+    background: url(random.jpg) no-repeat   0px 0px ; 
+    width:300px; 
+    height:300px;}
+
+    #social-media.randoms{
+        margin-top: 80%;
+        margin-left:3%;
+    }

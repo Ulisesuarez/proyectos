@@ -45,7 +45,8 @@ def exchange(lista, i, j):
 
 def isExchanged(lista, i, j):
     
-    return lista[i]<lista[j]
+    return lista[i]>lista[j]
+    
     # comprueba si el elemento en la posicion i
     # es menor que el elemento en la posicion j
     # devuelve un boolean
@@ -57,25 +58,31 @@ def isSorted(lista):
             return False"""
     for(offset,element) in enumerate(lista[:-1]):
         if element >lista[offset+1]:
-            print (str(element)+str(lista[offset+1]))
+            print (str(element)+str(lista[offset+1]),element <lista[offset+1] )
             return False
     return True
     # comprueba si la lista esta oredenada
     # devuelve un boolean
 
 
-def bubbleSort(lista):
-    swaped=True
-    while swaped:
-        swaped=False
-        for indice in range(len(lista)-1):
-            #if indice<len(lista)-1:
-                if less(lista[indice+1],lista[indice]):
-                    exchange(lista,indice,indice+1)
-                    #display(lista)
-                    print(lista)
-                    swaped=True
+def insertionSort(lista):
+    
+    pos=1
+    while pos<len(lista):
+        i=pos
+        isTheEnd=False
+
+        while i>0 and not isTheEnd:
+            if less(lista[i],lista[i-1]):
+                exchange(lista, i, i-1)
+                i-=1
+            else:
+                
+                isTheEnd=True
+        pos+=1         
     print(time.clock())
+    assert pos== len(lista)
+    assert isSorted(lista)
     return lista
         
                     
@@ -94,7 +101,7 @@ if __name__ == "__main__":
     plt.ion()
     listatest = createRandomList(15)
     print(listatest)
-    print(bubbleSort(listatest))
+    print(insertionSort(listatest))
     print(isSorted(listatest))
     plt.show(block=True)
 
@@ -103,7 +110,7 @@ if __name__ == "__main__":
 
     for test in open("stringTestCases.txt", 'r'):
         testList = list(test.replace(' ', ''))
-        bubbleSort(testList)
+        insertionSort(testList)
         assert isSorted(testList), "Test %s " % (str(test))
 
     print("string test cases passed")

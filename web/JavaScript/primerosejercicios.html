@@ -1,0 +1,85 @@
+<html>
+<head>
+    <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"> 
+    <title>Ejercicio1</title>
+    <link rel="stylesheet" type="text/css" href="theme.css"/>
+<script>
+
+function alerta(){
+    alert("noooooooo")
+}
+function alerta2(){
+    alert("MUAAHAHAHAHA!")
+}
+
+</script>
+</head>
+
+<body onload="alerta()">
+<button type="button" onclick="alerta2()">locura de botoooon</button>
+<p>Click the button to create a SELECT and an OPTION element.</p>
+
+<button onclick="myFunction2()">nooooooo</button>
+
+<script>
+function myFunction2() {
+    var x = document.createElement("SELECT");
+    x.setAttribute("id", "mySelect");
+    document.body.appendChild(x);
+
+    var z = document.createElement("option");
+    z.setAttribute("value", "negación");
+    var t = document.createTextNode("NO");
+    z.appendChild(t);
+    document.getElementById("mySelect").appendChild(z);
+}
+</script>
+<p>This example demonstrates how to assign an "onselect" event to an input element.</p>
+
+Select some text: 
+<input type="text" value="Noooooooooo" onselect="myFunction()">
+
+<p id="demo" onselect="lalala()"></p>
+
+<select id="miselect" onchange="m3()"  >
+
+    <option   value="lugubre">Funesto</option>
+    <option   value="alegre">Euforico</option>
+    <option   value="no sabe">No contesta</option>
+</select>
+<img id="ratilla" src="http://cdn01.ib.infobae.com/adjuntos/162/imagenes/014/014/0014014674.jpg"/>
+<button type="button" onclick="mueve()">muevela!</button>
+<script>
+function myFunction() {
+    document.getElementById("demo").innerHTML = "NOOOOOOOOOOOO!";
+}
+</script>
+<script>
+function lalala(){
+    document.getElementById("demo").style.color="red";
+}
+</script>
+<script>
+function m3(){
+    
+    var seleccionado= document.getElementById("miselect").selectedIndex;
+    var lista = document.getElementById("miselect").options;
+    alert(seleccionado+"valor: "+ lista[seleccionado].value+ " es "+ lista[seleccionado].text); 
+    var array=Array.from(lista);
+    lelelen=lista.length;
+    for (i = 0; i < lelelen; i++){
+        console.log(lista[i].text+" "+lista[i].value);}
+}
+function mueve(){
+    
+    var rat=document.getElementById('ratilla');
+    var ratstileleft=parseInt(document.defaultView.getComputedStyle(rat,null).left);
+    console.log(document.defaultView.getComputedStyle(rat,null));
+    console.log(ratstileleft);
+    ratstileleft+=1
+    document.getElementById('ratilla').style.left=ratstileleft+"px";
+}
+</script>
+</body>
+
+</html>

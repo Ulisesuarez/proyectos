@@ -33,10 +33,17 @@ def less(a, b):
 
 
 def exchange(lista, i, j):
-    
-    lista[i], lista[j]=lista[j], lista[i]
-    
+    print(lista)
+    #print (i, j, lista)
+    #lista[i], lista[j]=lista[j], lista[i]
+    sublist=list(lista[j:])
+    if lista[i] in sublist:
+            sublist.remove(lista[i])
+    #print("lista[:j]"+str(lista[:j]),"Lista[i]"+str(lista[i]),"sublist"+str(sublist),)
+   
+    lista=list(lista[:j]+[lista[i]]+sublist)
     assert isExchanged(lista, i, j)
+    return lista
     # intercambia dos elementos de posicion en la lista
     # recibe la lista, la posicion i y la posicion j
     # devuelve None
@@ -44,8 +51,10 @@ def exchange(lista, i, j):
 
 
 def isExchanged(lista, i, j):
+    print (lista)
+    #print(lista[i]<lista[j],lista[i],lista[j], j,i)
+    return lista[j]<lista[i]
     
-    return lista[i]<lista[j]
     # comprueba si el elemento en la posicion i
     # es menor que el elemento en la posicion j
     # devuelve un boolean
@@ -57,24 +66,33 @@ def isSorted(lista):
             return False"""
     for(offset,element) in enumerate(lista[:-1]):
         if element >lista[offset+1]:
-            print (str(element)+str(lista[offset+1]))
+            print (str(element)+str(lista[offset+1]),element <lista[offset+1] )
             return False
     return True
     # comprueba si la lista esta oredenada
     # devuelve un boolean
 
 
-def bubbleSort(lista):
+def insertionSort(lista):
+    print(time.clock())
     swaped=True
+    
     while swaped:
         swaped=False
-        for indice in range(len(lista)-1):
-            #if indice<len(lista)-1:
-                if less(lista[indice+1],lista[indice]):
-                    exchange(lista,indice,indice+1)
+        for indice in range(1,len(lista)):
+            j=indice-1
+            while less(lista[indice],lista[j]) and j>=0:
+                
+                
+               j-=1 
+            if less(lista[indice],lista[j+1]):
+                    lista=exchange(lista,indice,j+1)
                     #display(lista)
-                    print(lista)
+                    #print(lista)
                     swaped=True
+                
+        
+                
     print(time.clock())
     return lista
         
@@ -94,7 +112,8 @@ if __name__ == "__main__":
     plt.ion()
     listatest = createRandomList(15)
     print(listatest)
-    print(bubbleSort(listatest))
+    listatest=insertionSort(listatest)
+    print(listatest)
     print(isSorted(listatest))
     plt.show(block=True)
 
@@ -103,7 +122,7 @@ if __name__ == "__main__":
 
     for test in open("stringTestCases.txt", 'r'):
         testList = list(test.replace(' ', ''))
-        bubbleSort(testList)
+        testList=insertionSort(testList)
         assert isSorted(testList), "Test %s " % (str(test))
 
     print("string test cases passed")
