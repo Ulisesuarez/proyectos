@@ -1,0 +1,49 @@
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    
+}
+
+table{
+
+    width: 1000px;
+    height: 600px;
+}
+
+th, td {
+    padding: 1em;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: aquamarine;
+    font-family: Courier New, Courier, monospace;
+   
+}
+
+th{
+
+    background-color: aqua;
+   
+}
+
+
+.hora{
+    width: 1%;
+    height: auto;
+    font-size: 0.8em;
+    background-color: rgb(133, 154, 214);
+}
+
+caption{
+    font-size: 1em;
+    font-weight: bold;
+    font-family: fantasy;
+}
+
+#exp{
+
+    background-color: c8e9f8;
+    border-style:solid;
+    border-color:black;
+    font-size: 2em;
+    font-family: Times New Roman;
+}
