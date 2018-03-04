@@ -1,0 +1,68 @@
+Crear repositorio  VACIO en gitHub
+
+	https://github.com/new
+
+	Repository name:
+
+		ExamenUlisesSuarezdelRealFerriol
+
+Crear el proyecto maven con intelliJ
+
+Crear paquete org.mvpigs.NOMBREPROYECTO en main y test
+
+Crear repositorio local
+	
+	cd "Micarpeta/proyectos/java/Ulises Bruno Suarez del Real Ferriol"
+	git init
+	echo "#Maven">>.gitignore
+	echo "target/">>.gitignore
+	echo "#Idea">>.gitignore
+	echo ".idea/">>.gitignore
+	git add .
+	git commit -m "initial commit"
+	git remote add origin https://github.com/Ulisesuarez/ExamenUlisesSuarezdelRealFerriol.git
+	git push origin master
+	
+Modificar el pom Copiar pegar y cambiar CAMBIAR 
+
+   <name> CAMBIAR </name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+  	<maven.compiler.source>1.8</maven.compiler.source>
+  	<maven.compiler.target>1.8</maven.compiler.target>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  <dependencies>
+	<dependency>
+    <groupId>junit</groupId>
+    <artifactId>junit</artifactId>
+    <version>4.12</version>
+    <scope>test</scope>
+	</dependency>
+	<dependency>
+    <groupId>org.assertj</groupId>
+    <artifactId>assertj-core-java8</artifactId>
+    <version>1.0.0m1</version>
+    <scope>test</scope>
+	</dependency>
+	
+	</dependencies>
+  
+</project>
+
+Leer el exámen
+
+Iniciar una Clase Main (artifactID) y un TestJunit (ctrl shift t crear test) 
+
+New Scracth File java y ahi copiar clase Main Gelpi
+
+	poner primer trozo de código en mi clase Main Crear Test de la clase que involucra
+
+Ver primera imagen, escribir Historia de Usuario y Clases a crear
+Crear Clases
+
+hacer .gitignoreeee!
+SHORTCUTS
+Ctrl shift t Crear test
+alt 

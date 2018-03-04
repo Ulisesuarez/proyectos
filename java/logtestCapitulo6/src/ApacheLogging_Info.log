@@ -1,0 +1,22 @@
+[INFO ] 2018-03-02 16:45:39.340 [main] ApacheLogging
+                        - fundAmount = 11000.0
+[INFO ] 2018-03-02 16:45:39.343 [main] ApacheLogging
+                        - fundAmount = 11000.0
+[INFO ] 2018-03-02 16:45:39.343 [main] ApacheLogging
+                        - fundAmount = 11000.0
+[INFO ] 2018-03-02 16:45:39.343 [main] ApacheLogging
+                        - fundAmount = 11000.0
+[INFO ] 2018-03-02 16:45:39.343 [main] ApacheLogging
+                        - fundAmount = 11000.0
+[INFO ] 2018-03-02 16:45:39.343 [main] ApacheLogging
+                        - fundAmount = 11000.0
+[FATAL] 2018-03-02 16:45:39.343 [main] ApacheLogging
+                        - monthlyPension is too low.
+[INFO ] 2018-03-02 16:45:39.344 [main] ApacheLogging
+                        - informational message
+[WARN ] 2018-03-02 16:45:39.344 [main] ApacheLogging
+                        - warning message
+[ERROR] 2018-03-02 16:45:39.344 [main] ApacheLogging
+                        - error message
+[FATAL] 2018-03-02 16:45:39.344 [main] ApacheLogging
+                        - fatal message
