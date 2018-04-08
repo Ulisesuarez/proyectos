@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <questions>
+    <question id="que001">
+      <text>¿Que muestra por consola el siguiente código?</text>
+      <type>radio</type>
+      <image>https://i.imgur.com/LAtW5bD.png</image>
+      <option correct="y">False</option>
+      <option correct="n">True</option>
+      <option correct="n">No compila</option>
+      <type>checkbox</type>
+      <suboption correct="n">Porque  hay que escribir import para cada paquete importado</suboption>
+      <suboption correct="n">porque […]  es un error de sintaxis</suboption>
+      <suboption correct="n">porque no se puede declarar una variable sin la palabra reservada variable</suboption>
+      <suboption correct="n">todas las anteriores son correctas</suboption>
+    </question>
+    <question id="que002">
+      <text>¿Qué recibe como argumentos y que devuelve la siguiente función?</text>
+      <type>select multiple</type>
+      <image>https://i.imgur.com/TXt1yG2.png</image>
+      <option correct="n">Recibe punteros de variables y devuelve direcciones de memoria.</option>
+      <option correct="n">Recibe direcciones de memoria y devuelve punteros.</option>
+      <option correct="y">No recibe ningún parámetro y devuelve direcciones de memoria.</option>
+      <option correct="y">No recibe ningún parámetro y devuelve punteros. </option>
+    </question>
+    <question id="que003">
+      <text> ¿Que muestra por consola el siguiente código?</text>
+      <type>text</type>
+      <image>https://i.imgur.com/FcNrhfE.png</image>
+      <option correct="y">0</option>
+      <option correct="y">1</option>
+      <option correct="y">2</option>
+      <option correct="y">0</option>
+      <option correct="y">0</option>
+      <option correct="y">0</option>
+    </question>
+    <question id="que004">
+      <text>¿Que muestra por consola el siguiente código?</text>
+      <type>select</type>
+      <image>https://i.imgur.com/o0kOw2b.png</image>
+      <option correct="n">7</option>
+      <option correct="n">4</option>
+      <option correct="n">3</option>
+      <option correct="y">invalid operation: a + b (mismatched types int8 and int16)</option>
+    </question>
+    <question id="que005">
+      <text>Puede utilizarse la declaración abreviada  ":=" para definir variables globales?</text>
+      <type>button</type>
+      <option correct="n">Sí </option>
+      <option correct="y">No</option>
+    </question>
+    <question id="que006">
+      <text>¿Cual de las siguientes declaraciones es correcta?</text>
+      <type>radio</type>
+      <option correct="n">const Pi = math.Pi</option>
+      <option correct="n">const Pi = 3.1416</option>
+      <option correct="y">Ambas</option>
+      <option correct="n">Ninguna</option>
+    </question>
+    <question id="que007">
+      <text>Siendo que los Arrays son de type valor, ¿Al pasar un array a una función,
+      le pasamos una copia del Array o una referencia al Array?</text>
+      <type>button</type>
+      <option correct="n">Referencia</option>
+      <option correct="y">Copia </option>
+    </question>
+    <question  id="que008">
+      <text>¿Cuál es la secuencia del output generado por el siguiente código?</text>
+      <type>select</type>
+      <image>https://i.imgur.com/EcmtEmC.png</image>
+      <option correct="n">Siempre 1, 2, 3</option>
+      <option correct="n">Siempre 2, 1, 3</option>
+      <option correct="n">3</option>
+      <option correct="y">A veces 1, 2, 3 y otras 2, 1, 3 </option>
+    </question>
+    <question id="que009">
+      <text>¿Que especificador de formato  deberíamos emplear para imprimir un boolean?</text>
+      <type>datalist</type>
+      <option correct="n">%b</option>
+      <option correct="y">%t</option>
+      <option correct="n">%s</option>
+    </question>
+    <question id="que010">
+      <text>¿Cual es la salida del siguiente código?</text>
+      <type>select</type>
+      <image>https://i.imgur.com/rZ9abRW.png</image>
+      <option correct="n">0000</option>
+      <option correct="n">0123</option>
+      <option correct="n">0044</option>
+      <option correct="y">3210</option>
+      <option correct="n">4444</option>
+    </question>
+    <question id="que011">
+      <text>¿Te ha gustado este test?</text>
+      <type>checkbox</type>
+      <option correct="y">Sí</option>
+      <option correct="y">Mucho</option>
+      <option correct="y">Es lo mejor que me ha pasado nunca!</option>
+      <option correct="y">^^</option>
+    </question>
+
+  </questions>
+
