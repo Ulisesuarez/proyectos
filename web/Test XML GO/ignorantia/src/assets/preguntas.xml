@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE questions SYSTEM "questions.dtd">
   <questions>
     <question id="que001">
       <text>¿Que muestra por consola el siguiente código?</text>
@@ -7,11 +8,6 @@
       <option correct="y">False</option>
       <option correct="n">True</option>
       <option correct="n">No compila</option>
-      <type>checkbox</type>
-      <suboption correct="n">Porque  hay que escribir import para cada paquete importado</suboption>
-      <suboption correct="n">porque […]  es un error de sintaxis</suboption>
-      <suboption correct="n">porque no se puede declarar una variable sin la palabra reservada variable</suboption>
-      <suboption correct="n">todas las anteriores son correctas</suboption>
     </question>
     <question id="que002">
       <text>¿Qué recibe como argumentos y que devuelve la siguiente función?</text>
@@ -97,6 +93,5 @@
       <option correct="y">Es lo mejor que me ha pasado nunca!</option>
       <option correct="y">^^</option>
     </question>
-
   </questions>
 
